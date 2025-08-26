@@ -15,16 +15,11 @@ python src/simulation_reads.py \
 ```
 
 
-Example:
+Example: 25 cells, 25 SNV mutations, 3 copy number clusters, k=5 example with missing data + error
 
 ```bash
-#25 cells, 25 SNV mutations, 3 copy number clusters, k=5 example with missing data + error
 
-python simulation_reads.py  \
-
--n 25 -m 25 -p 3 -k 5 -s 1 -d 0.1 --cov 50 -a  0.001 -b 0.001 --ado 15 \
-
---maxcn 8 --readthreshold 5 --vafthreshold 0.1 -l 0.8 -v
+python simulation_reads.py -n 25 -m 25 -p 3 -k 5 -s 1 -d 0.1 --cov 50 -a  0.001 -b 0.001 --ado 15 --maxcn 8 --readthreshold 5 --vafthreshold 0.1 -l 0.8 -v
 
 ```
 
