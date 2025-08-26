@@ -125,7 +125,7 @@ This command will create the `ground_truth` simulation directory with the data. 
 
 Tree simulation is done using a random growing network where our node set consists of mutations and copy number deletions. There are $m+p$ total nodes where $m$ and $p$ are given by the `-m` and `-p` fields and all nodes are attached to an existing node in the tree with equal probability. Copy number deletions induce the loss of mutation nodes on the path from the deletion node to the root node, each with probability given by the mutation loss rate parameter `-l`. Each mutation is allowed to be lost at most $k$ times where $k$ is given by the `-k` field, and each copy number deletion node will change the copy number cluster column for all descendant nodes. 
 
-A matrix is constructed alongside the tree, we have a correspondence between nodes on the tree and rows in this intermediate matrix called `multi_state_tree_node_character_matrix`. A subset of these rows are then selected and relabeled $s_0, s_1, …, s_n$ , and binarized this is the true mutation matrix `character_matrix_without_noise`.  
+A matrix is constructed alongside the tree, we have a correspondence between nodes on the tree and rows in this intermediate matrix called `multi_state_tree_node_character_matrix`. A subset of these rows are then selected, relabeled $s_0, s_1, …, s_n$ , and binarized this is the true mutation matrix `character_matrix_without_noise`.  
 
 **Read counts and estimated mutation matrix**
 
